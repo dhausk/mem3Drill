@@ -4,10 +4,10 @@ exports.up = function (knex, Promise) {
     table.increments("id");
     table.text("name");
     table.text("developer");
-    table.float("rating")
+    table.float("rating");
   });
 };
 
 exports.down = function (knex, Promise) {
-  return knex.schema.dropTableIfExists("game")
+  return knex.schema.dropTableIfExists("game");
 };
