@@ -17,7 +17,7 @@ const data = [
     developer: "Demruth",
     rating: 8.1
   }
-]
+];
 exports.seed = function (knex, Promise) {
   return knex('game')
     .del()
